@@ -18,13 +18,20 @@ paragraphs.forEach((paragraph, index) => {
 
 
 images.forEach((image, index) => {
-    image.addEventListener('click', function () {
+    image.addEventListener('mouseover', function () {
         paragraphs.forEach(paragraph => {
             paragraph.style.display = 'none';
         });
         paragraphs[index].style.display = 'block';
     });
+    image.addEventListener('mouseout', function(){
+        paragraphs.forEach(paragraph => {
+            paragraph.style.display = 'none';
+        });
+    } )
 });
+
+
 
 
 next.addEventListener('click', nextSlider)
