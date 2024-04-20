@@ -4,18 +4,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(244, 252, 249);
+    background-color: rgb(55, 55, 55);
 }
 img{
    height: 400px; 
    width: auto;
+   margin: 0 30px;
+   border: 1px white solid;
 }
+
 button{
-    width: 80px;
+    width: 40px;
     height: 30px;
     border: 0;
-    border-radius: 4px;
-    background-color: rgb(146, 247, 213);
+    background-color: rgba(230, 230, 230, 0.5);
     color: rgb(61, 61, 61);
     letter-spacing: 2px;
     margin: 10px 5px;
@@ -37,4 +39,7 @@ button{
 }
 p{
     display: none;
+    color: rgb(197, 197, 197);
+    font-family:Arial, Helvetica, sans-serif;
 }
+
