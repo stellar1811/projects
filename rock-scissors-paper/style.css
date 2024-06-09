@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+.main-container{
+    justify-content: center;
+    height: 100vh;
+}
+.figures-container{
+    margin-top: 20px;
+    display: flex;
+}
+
+.main-container,
+.rock-box,
+.scissors-box,
+.paper-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    width: 200px;
+    height: 160px;
+}
+
+.result{
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-message{
+    font-size: 26px;
+}
+
+
+.scissors-box{
+    animation: lower 1.5s infinite linear;
+}
+
+.rock-box,
+.paper-box{
+    animation: upper 1.5s infinite linear;
+}
+
+@keyframes upper{
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(0, 5px); }
+}
+@keyframes lower{
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(0, -5px); }
+}
+
+
