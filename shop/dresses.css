@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+
+.dresses-sliders{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.dresses-images-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dresses-images-container img{
+    width: 300px;
+    height: 450px;
+}
+
+.price{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: rgb(89, 89, 89);
+}
+
+.price-and-buy{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-box{
+    display: flex;
+    
+}
+.price-and-buy button{
+    width: 75px;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 12px;
+}
+
+.shopping-cart{
+    margin-top: 50px;
+    padding: 5px;
+    background-color: white;
+    border: 1.5px black solid;
+    border-radius: 50px;
+    width: 140px;
+    height: 35px;
+
+    display: flex;
+}
+.shopping-cart:hover,
+.shopping-cart button:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.shopping-cart img{
+    width: 25px;
+    height: 25px;
+}
+.shopping-cart button{
+    background-color: white;
+    border: 0;
+    border-radius: 50px;
+}
+
+.dresses-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.dresses-container h2{
+    font-family: sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: rgb(63, 63, 63);
+    line-height: 2.5;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.dress-details-container{
+    padding: 50px;
+    display: flex;
+    background-color: rgb(255, 252, 249);
+}
+.dress-details-container img{
+    width: 400px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.dress-info p{
+    color: rgb(74, 74, 74);
+}
+
+.dress-info button{
+    width: 200px;
+    height: 30px;
+    line-height: 15px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 30px;
+}

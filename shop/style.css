@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.navbar,
+.clothes-categories,
+.contacts,
+.price-and-buy,
+.price-box,
+.input-field,
+.about-us,
+.input-container,
+footer,
+.footer-box > div
+{
+    display: flex;
+}
+
+.main-container,
+.clothes-images-container,
+.sliders,
+.register,
+.payment,
+.gift,
+.gift-container,
+.footer-box,
+.footer-block,
+form{
+    display: flex;
+    align-items: center;
+}
+
+
+.clothes-images-container,
+.register,
+.input-field,
+.gift-container,
+.footer-box > div,
+form{
+    flex-direction: column;
+}
+
+
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+.line{
+    background-color: rgb(14, 14, 14);
+    color: white;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px black solid;
+}
+
+.navbar h2{
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 20px;
+}
+.clothes-categories{
+    margin-left: 70px;
+}
+.clothes-categories li{
+    list-style: none;
+}
+.clothes-categories li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(97, 50, 141);
+}
+.clothes-categories li a:hover{
+    color: rgb(55, 24, 85);
+}
+.contacts img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+
+/* main */
+
+
+.main-container{
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url('images/clothing.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.main-container h1{
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.clothes-images-container{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sliders{
+    width: 100%;
+    height: 90vh;
+    transition: transform 0.5s ease;
+}
+
+.clothes-images-container img{
+    width: 300px;
+    height: 450px;
+    margin-right: 25px;
+}
+
+.clothes-sliders{
+    padding: 50px;
+}
+
+.register{
+    padding: 0 50px;
+}
+
+.clothes-sliders h2,
+.register h2{
+    letter-spacing: 2px;
+}
+
+.clothes-images-desc{
+    margin-top: 30px;
+}
+
+.clothes-images-desc-text{
+    font-size: 12px;
+}
+
+.price{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: rgb(89, 89, 89);
+}
+
+.price-and-buy{
+    width: 300px;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.price-and-buy button{
+    width: 75px;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 12px;
+}
+
+.price-and-buy button:hover,
+.prev-button:hover,
+.next-button:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.register{
+    height: 110vh;
+    justify-content: center;
+    background-image: url('https://borisstudio.com/wp-content/webp-express/webp-images/uploads/xdizajn-magazina-odezhdy-banner3.png.webp.pagespeed.ic.-BuVEizll1.webp');
+    background-size: cover;
+    padding: 20px;
+
+}
+.register h2{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+.register h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+form{
+    width: 400px;
+    height: 450px;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 6px;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+label,
+.register h3,
+.register h2{
+    color: white;
+}
+
+.input-field{
+    margin-top: 20px;
+}
+
+.input,
+select{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(54, 54, 54);
+    padding: 10px;
+}
+.payment{
+    width: 300px;
+    margin-top: 20px;
+}
+.register-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgb(27, 20, 20);
+    color: white;
+    border: 0;
+    margin-top: 15px;
+}
+.register-button:hover{
+    background-color: rgb(41, 41, 41)
+}
+
+.input-field span{
+    color: rgb(255, 0, 0);
+    /* background-color: rgb(104, 104, 104); */
+}
+
+.next-button,
+.prev-button{
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+}
+
+.about-us{
+    height: 80vh;
+    justify-content: center;
+    padding: 50px;
+}
+.about-us img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.about-us-desc h4{
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+}
+
+.about-us-desc h2
+.about-us-desc h3,
+.about-us-desc h4{
+    font-weight: normal;
+}
+
+.about-us-desc p{
+    width: 600px;
+    line-height: 1.5;
+    color: rgb(114, 114, 114);
+}
+.gift{
+    height: 30vh;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+}
+.gift img{
+    width: 130px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.gift-container h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.gift-container p{
+    color: rgb(72, 72, 72);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.input-container{
+    margin-top: 10px;
+}
+.input-container input{
+    width: 300px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.input-container button{
+    width: 200px;
+    height: 30px;
+    line-height: 15px;
+    background-color: rgb(45, 45, 45);
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.input-container button:hover{
+    background-color: black;
+}
+footer{
+    height: 50vh;
+    background-color: rgb(52, 52, 52);
+    padding: 50px;
+    justify-content: center
+}
+.footer-box{
+    width: 50vw;
+    justify-content: space-between;
+}
+footer h3{
+    color: white;
+    font-size: 14px;
+}
+footer a, 
+footer p{
+    color: rgb(174, 174, 174);
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 2.5;
+}
+footer a:hover, 
+footer p:hover{
+    color: rgb(130, 130, 130);
+}
+footer ul{
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box > div{
+    align-items: flex-start;
+}
+
+.contacts-footer a,
+.contacts-footer p{
+    font-size: 14px;
+    color: white;
+    margin: 10px 0 0 10px;
+}
+
+.contacts-footer p{
+    display: inline;
+}
+
+footer a:hover, 
+footer p:hover,
+.footer-box:hover,
+.register-button:hover,
+.price-and-buy button:hover,
+.prev-button:hover,
+.next-button:hover
+{
+    transition: all 0.2s ease-in-out;
+}
